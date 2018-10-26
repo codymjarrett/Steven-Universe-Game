@@ -46,7 +46,7 @@ function checkWin() {
   if (currentScore > targetScore) {
     $(".col-md-4").removeClass("col-md-4 pb-5").addClass("col-md-3 pb-5")
     $(".new-div").addClass("col-md-3 pb-5")
-    $(".new-div").html('<div class="card text-white bg-danger mb-3 border border-white d-md-block mx-auto" style="max-width: 14rem;"> <div class="card-header font-weight-bold shadow-lg text-center"></div> <div class="card-body"> <h5 class="card-title text-center">You Lost!</h5></div></div>')
+    $(".new-div").html('<div class="card text-white bg-success mb-3 border border-white d-md-block mx-auto" style="max-width: 14rem;"> <div class="card-header font-weight-bold shadow-lg text-center">&nbsp;&nbsp;</div> <div class="card-body"> <h5 class="card-title text-center">You Lost!</h5></div></div>')
 
     // $("#you-win-lose").html('You lost!');
     lossScore++;
@@ -58,7 +58,7 @@ function checkWin() {
   } else if (currentScore === targetScore) {
     $(".col-md-4 pb-5").removeClass("col-md-4 pb-5").addClass("col-md-3 pb-5")
     $(".new-div").addClass("col-md-3 pb-5")
-    $(".new-div").html('<div class="card text-white bg-danger mb-3 border border-white d-md-block mx-auto" style="max-width: 14rem;"><div class="card-header font-weight-bold shadow-lg text-center"></div><div class="card-body"><h5 class="card-title text-center">You won!</h5></div></div>')
+    $(".new-div").html('<div class="card text-white bg-success mb-3 border border-white d-md-block mx-auto" style="max-width: 14rem;"><div class="card-header font-weight-bold shadow-lg text-center">&nbsp;&nbsp;</div><div class="card-body"><h5 class="card-title text-center">You won!</h5></div></div>')
     // $("#you-win-lose").html('You won!');
     winsScore++;
     $("#wins-number").text(winsScore);
